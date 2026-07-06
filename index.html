@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stackly Hospital Management — Integrated hospital management platform for admissions, bed management, billing, records, and operations in Bangalore, India.">
-  <meta name="theme-color" content="#0B1A2B">
-  <title>Stackly Hospital Management — Hospital Management Platform</title>
+  <meta name="description" content="Stackly Hospital Management - Integrated hospital management platform for admissions, bed management, billing, records, and operations in Bangalore, India.">
+  <meta name="theme-color" content="#F4F7FB">
+  <title>Stackly Hospital Management - Hospital Management Platform</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/premium.css">
   <link rel="stylesheet" href="css/healthcare.css">
+  <link rel="stylesheet" href="css/light-theme.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
-<body class="page-home page-hero-overlay premium-theme">
+<body class="page-home page-hero-overlay premium-theme theme-light">
 
   <div id="preloader" aria-hidden="true">
     <div class="preloader__stage">
@@ -24,7 +25,7 @@
       <div class="preloader__progress" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
         <span class="preloader__progress-fill"></span>
       </div>
-      <p class="preloader__tagline" data-boot-messages="Loading hospital system…|Securing patient records…|Connecting departments…|Welcome to Hospital Management">Loading hospital system…</p>
+      <p class="preloader__tagline" data-boot-messages="Loading hospital system...|Securing patient records...|Connecting departments...|Welcome to Hospital Management">Loading hospital system...</p>
     </div>
   </div>
 
@@ -60,66 +61,72 @@
 
   <main class="site-main">
 
-    <section class="hero-premium hero-premium--video hero-premium--health hero-premium--centered" id="hero" aria-labelledby="hero-title">
-      <div class="hero-premium__media" aria-hidden="true">
-        <video class="hero-premium__video" autoplay muted loop playsinline preload="auto">
-          <source src="images/hospital-management.mp4" type="video/mp4">
-        </video>
-        <img class="hero-premium__poster"  alt="" width="1920" height="1080" decoding="async">
-        <div class="hero-premium__overlay"></div>
-        <div class="hero-premium__glow hero-premium__glow--1"></div>
-        <div class="hero-premium__glow hero-premium__glow--2"></div>
-      </div>
-      <div class="container hero-premium__layout hero-premium__layout--center hero-health-hero__layout">
-        <div class="hero-premium__content hero-premium__content--center hero-health-hero__content" data-aos="fade-up">
-          <span class="hero-premium__kicker">Hospital management platform</span>
-          <h1 id="hero-title">Integrated <span class="hero-premium__accent hero-rotate" data-hero-rotate data-hero-words="Patient|Bed|Staff|Billing">Patient</span> management<br>for every hospital department</h1>
-          <p class="hero-premium__lead lead">Manage admissions, allocate beds, schedule staff, and process billing—on one secure platform built for hospitals, departments, and administrators.</p>
-          <div class="hero-premium__actions">
-            <a class="btn btn--primary" href="404.html">Request a demo</a>
-            <a class="btn btn--outline-light btn--no-hover-color" href="404.html">Explore modules</a>
-          </div>
-          <ul class="hero-premium__brands" aria-label="Platform trust markers">
-            <li class="hero-premium__brand-pill">HIPAA-ready</li>
-            <li class="hero-premium__brand-pill">Licensed staff</li>
-            <li class="hero-premium__brand-pill">Automated records</li>
-            <li class="hero-premium__brand-pill">Real-time dashboards</li>
-          </ul>
-          <div class="hero-health-stats hero-health-stats--center" data-hero-stats data-aos="fade-up" data-aos-delay="100">
-            <div class="hero-health-stats__item">
-              <span class="hero-health-stats__value"><span class="stat-counter" data-target="50" data-format="kplus">0</span></span>
-              <span class="hero-health-stats__label">Patients served</span>
+    <section class="hero-premium hero-premium--video hero-premium--health hero-premium--split-light" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-split">
+        <div class="hero-split__copy" data-aos="fade-right">
+          <div class="hero-premium__content hero-health-hero__content">
+            <span class="hero-premium__kicker">Hospital management platform</span>
+            <h1 id="hero-title">Integrated <span class="hero-premium__accent hero-rotate" data-hero-rotate data-hero-words="Patient|Bed|Staff|Billing">Patient</span> management<br>for every hospital department</h1>
+            <p class="hero-premium__lead lead">Manage admissions, allocate beds, schedule staff, and process billing on one secure platform built for hospitals, departments, and administrators.</p>
+            <div class="hero-premium__actions">
+              <a class="btn btn--primary" href="404.html">Request a demo</a>
+              <a class="btn btn--outline-dark" href="404.html">Explore modules</a>
             </div>
-            <div class="hero-health-stats__item">
-              <span class="hero-health-stats__value"><span class="stat-counter" data-target="15" data-format="plus">0</span></span>
-              <span class="hero-health-stats__label">Avg bed turnover</span>
-            </div>
-            <div class="hero-health-stats__item">
-              <span class="hero-health-stats__value"><span class="stat-counter" data-target="4.9" data-format="decimal" data-decimals="1">0</span></span>
-              <span class="hero-health-stats__label">Hospital rating</span>
+            <ul class="hero-premium__brands" aria-label="Platform trust markers">
+              <li class="hero-premium__brand-pill">HIPAA-ready</li>
+              <li class="hero-premium__brand-pill">Licensed staff</li>
+              <li class="hero-premium__brand-pill">Automated records</li>
+              <li class="hero-premium__brand-pill">Real-time dashboards</li>
+            </ul>
+            <div class="hero-health-stats hero-health-stats--inline" data-hero-stats data-aos="fade-up" data-aos-delay="100">
+              <div class="hero-health-stats__item">
+                <span class="hero-health-stats__value"><span class="stat-counter" data-target="50" data-format="kplus">0</span></span>
+                <span class="hero-health-stats__label">Patients served</span>
+              </div>
+              <div class="hero-health-stats__item">
+                <span class="hero-health-stats__value"><span class="stat-counter" data-target="15" data-format="plus">0</span></span>
+                <span class="hero-health-stats__label">Avg bed turnover</span>
+              </div>
+              <div class="hero-health-stats__item">
+                <span class="hero-health-stats__value"><span class="stat-counter" data-target="4.9" data-format="decimal" data-decimals="1">0</span></span>
+                <span class="hero-health-stats__label">Hospital rating</span>
+              </div>
             </div>
           </div>
         </div>
-        <aside class="hero-vitals-strip glass-card" data-hero-telemetry data-aos="fade-up" data-aos-delay="200" aria-label="Live hospital stats preview">
-          <div class="hero-vitals-strip__session">
-            <img class="hero-vitals-strip__avatar" src="images/about-nina.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
-            <div>
-              <strong>Dr. Elena Vasquez</strong>
-              <span>General Ward · Admin review</span>
+        <div class="hero-split__visual" data-aos="fade-left" data-aos-delay="100">
+          <span class="hero-split__aura hero-split__aura--indigo" aria-hidden="true"></span>
+          <span class="hero-split__aura hero-split__aura--coral" aria-hidden="true"></span>
+          <span class="hero-split__orbit" aria-hidden="true"></span>
+          <div class="hero-split__media-card">
+            <span class="hero-split__media-shine" aria-hidden="true"></span>
+            <span class="hero-split__media-grid" aria-hidden="true"></span>
+            <video class="hero-premium__video" autoplay muted loop playsinline preload="auto" poster="images/digital-health-about.webp">
+              <source src="images/hospital-management.mp4" type="video/mp4">
+            </video>
+            <div class="hero-premium__overlay hero-split__overlay" aria-hidden="true"></div>
+          </div>
+          <aside class="hero-vitals-strip hero-split__telemetry" data-hero-telemetry aria-label="Live hospital stats preview">
+            <div class="hero-vitals-strip__session">
+              <img class="hero-vitals-strip__avatar" src="images/about-nina.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <div>
+                <strong>Dr. Elena Vasquez</strong>
+                <span>General Ward - Admin review</span>
+              </div>
+              <span class="hero-vitals-strip__live"><span class="hero-vitals-strip__dot" aria-hidden="true"></span> Live</span>
             </div>
-            <span class="hero-vitals-strip__live"><span class="hero-vitals-strip__dot" aria-hidden="true"></span> Live</span>
-          </div>
-          <dl class="hero-vitals-strip__grid">
-            <div><dt>OPD</dt><dd><span data-telemetry="hr">47</span> <small>today</small></dd></div>
-            <div><dt>Beds</dt><dd><span data-telemetry="spo2">84</span><small>%</small></dd></div>
-            <div><dt>ICU</dt><dd><span data-telemetry="bp">12/15</span></dd></div>
-            <div><dt>ER</dt><dd><span data-telemetry="temp">22</span><small>min</small></dd></div>
-          </dl>
-          <div class="hero-vitals-strip__footer">
-            <span data-telemetry="coords">Bangalore, India</span>
-            <span data-telemetry="clock">00:00:00 MST</span>
-          </div>
-        </aside>
+            <dl class="hero-vitals-strip__grid">
+              <div><dt>OPD</dt><dd><span data-telemetry="hr">47</span> <small>today</small></dd></div>
+              <div><dt>Beds</dt><dd><span data-telemetry="spo2">84</span><small>%</small></dd></div>
+              <div><dt>ICU</dt><dd><span data-telemetry="bp">12/15</span></dd></div>
+              <div><dt>ER</dt><dd><span data-telemetry="temp">22</span><small>min</small></dd></div>
+            </dl>
+            <div class="hero-vitals-strip__footer">
+              <span data-telemetry="coords">Bangalore, India</span>
+              <span data-telemetry="clock">00:00:00 MST</span>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -134,7 +141,7 @@
       <div class="container">
         <ul class="trust-strip__list">
           <li class="trust-strip__item"><strong>HIPAA-ready</strong> infrastructure</li>
-          <li class="trust-strip__item"><strong>4.9★</strong> hospital rating</li>
+          <li class="trust-strip__item"><strong>4.9</strong> hospital rating</li>
           <li class="trust-strip__item"><strong>50K+</strong> patients admitted</li>
           <li class="trust-strip__item"><strong>&lt;15 min</strong> bed turnover</li>
         </ul>
@@ -149,7 +156,7 @@
         <div data-aos="fade-left">
           <p class="section__kicker">Platform spotlight</p>
           <h2 class="section__title">One console for every touchpoint in hospital operations</h2>
-          <p class="split-layout__lead">Stackly Hospital Management unifies admissions, bed allocation, staff scheduling, billing, and encrypted records—so administrators see the full picture without switching systems.</p>
+          <p class="split-layout__lead">Stackly Hospital Management unifies admissions, bed allocation, staff scheduling, billing, and encrypted records so administrators see the full picture without switching systems.</p>
           <ul class="checklist">
             <li>Unified patient timeline across OPD, IPD, and departments</li>
             <li>Role-based access for admins, doctors, nurses, and staff</li>
@@ -210,7 +217,7 @@
             </div>
             <div class="dish-card__body">
               <div class="dish-card__meta"><h3 class="dish-card__name">Laboratory Hub</h3><span class="dish-card__price">Lab + reports</span></div>
-              <p class="dish-card__desc">Order tests, track samples, review results, and share reports—all within the patient record.</p>
+              <p class="dish-card__desc">Order tests, track samples, review results, and share reports all within the patient record.</p>
             </div>
           </article>
           <article class="dish-card glass-card menu-item" data-category="wellness">
@@ -256,24 +263,24 @@
         </header>
         <div class="why-grid">
           <article class="why-card glass-card" data-aos="fade-up">
-            <span class="why-card__icon" aria-hidden="true">◆</span>
+            <span class="why-card__icon" aria-hidden="true">&#10003;</span>
             <h3>HIPAA-ready by design</h3>
             <p>Automated records, role-based access, and audit trails that support compliance reviews without extra tooling.</p>
           </article>
           <article class="why-card glass-card" data-aos="fade-up" data-aos-delay="50">
-            <span class="why-card__icon" aria-hidden="true">◇</span>
+            <span class="why-card__icon" aria-hidden="true">&#10003;</span>
             <h3>Licensed medical staff</h3>
-            <p>Board-certified doctors and trained nurses across all departments—available when patients need care.</p>
+            <p>Board-certified doctors and trained nurses across all departments available when patients need care.</p>
           </article>
           <article class="why-card glass-card" data-aos="fade-up" data-aos-delay="100">
-            <span class="why-card__icon" aria-hidden="true">○</span>
+            <span class="why-card__icon" aria-hidden="true">&#10003;</span>
             <h3>Real-time operations</h3>
-            <p>Live bed status, queue lengths, and department metrics with smart alerts—so bottlenecks are resolved before they escalate.</p>
+            <p>Live bed status, queue lengths, and department metrics with smart alerts so bottlenecks are resolved before they escalate.</p>
           </article>
           <article class="why-card glass-card" data-aos="fade-up" data-aos-delay="150">
-            <span class="why-card__icon" aria-hidden="true">★</span>
+            <span class="why-card__icon" aria-hidden="true">&#10003;</span>
             <h3>Operations that scale</h3>
-            <p>From single hospitals to multi-site networks—one platform that grows with your bed capacity and department needs.</p>
+            <p>From single hospitals to multi-site networks, one platform that grows with your bed capacity and department needs.</p>
           </article>
         </div>
       </div>
@@ -313,29 +320,29 @@
           <button type="button" class="testimonial-slider__arrow testimonial-slider__arrow--prev" data-testimonial-prev aria-label="Previous testimonial">&#8249;</button>
           <div class="testimonial-track">
             <div class="testimonial-slides" data-testimonial-track>
-              <article class="testimonial-slide testimonial-slide--premium" aria-hidden="false">
-                <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <blockquote class="testimonial-quote">After implementing Stackly Hospital Management, our bed allocation time dropped by 40%. Admissions that used to take hours now complete in minutes—and staff always know ward availability.</blockquote>
-                <footer class="testimonial-head">
+              <article class="testimonial-slide testimonial-slide--premium testimonial-slide--card" aria-hidden="false">
+                <header class="testimonial-head">
                   <span class="testimonial-avatar" aria-hidden="true">MR</span>
                   <div class="testimonial-meta"><strong>Maria Rodriguez</strong><span>Hospital Administrator · Bangalore, India</span></div>
-                </footer>
+                  <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </header>
+                <blockquote class="testimonial-quote">After implementing Stackly Hospital Management, our bed allocation time dropped by 40%. Admissions that used to take hours now complete in minutes, and staff always know ward availability.</blockquote>
               </article>
-              <article class="testimonial-slide testimonial-slide--premium" aria-hidden="true">
-                <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <blockquote class="testimonial-quote">We deployed the billing module and cut invoice processing from days to hours. Insurance claims sync automatically and revenue tracking is finally transparent.</blockquote>
-                <footer class="testimonial-head">
+              <article class="testimonial-slide testimonial-slide--premium testimonial-slide--card" aria-hidden="true">
+                <header class="testimonial-head">
                   <span class="testimonial-avatar" aria-hidden="true">JT</span>
                   <div class="testimonial-meta"><strong>James Turner</strong><span>Finance Director · Hyderabad, India</span></div>
-                </footer>
+                  <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </header>
+                <blockquote class="testimonial-quote">We deployed the billing module and cut invoice processing from days to hours. Insurance claims sync automatically and revenue tracking is finally transparent.</blockquote>
               </article>
-              <article class="testimonial-slide testimonial-slide--premium" aria-hidden="true">
-                <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <blockquote class="testimonial-quote">Our hospital adopted Stackly Hospital Management for staff scheduling—shift conflicts that used to cause chaos are now resolved in minutes. Departments notice the difference.</blockquote>
-                <footer class="testimonial-head">
+              <article class="testimonial-slide testimonial-slide--premium testimonial-slide--card" aria-hidden="true">
+                <header class="testimonial-head">
                   <span class="testimonial-avatar" aria-hidden="true">LP</span>
                   <div class="testimonial-meta"><strong>Dr. Lisa Park</strong><span>Medical Director · City General Hospital</span></div>
-                </footer>
+                  <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </header>
+                <blockquote class="testimonial-quote">Our hospital adopted Stackly Hospital Management for staff scheduling; shift conflicts that used to cause chaos are now resolved in minutes. Departments notice the difference.</blockquote>
               </article>
             </div>
           </div>
@@ -350,7 +357,7 @@
         <header class="section__head section__head--center">
           <p class="section__kicker" data-aos="fade-up">Hospital plans</p>
           <h2 class="section__title" data-aos="fade-up" data-aos-delay="100">Transparent pricing for every hospital size</h2>
-          <p class="section__lead" data-aos="fade-up" data-aos-delay="150">Flexible tiers for small clinics, mid-size hospitals, and multi-site networks—custom deployment available.</p>
+          <p class="section__lead" data-aos="fade-up" data-aos-delay="150">Flexible tiers for small clinics, mid-size hospitals, and multi-site networks; custom deployment available.</p>
         </header>
         <div class="pricing-grid">
           <article class="pricing-card" data-aos="fade-up">
@@ -411,7 +418,7 @@
             <a class="btn btn--outline-dark pricing-card__cta" href="404.html">Talk to sales</a>
           </article>
         </div>
-        <p class="pricing-note" data-aos="fade-up">Prices reflect typical deployment tiers. Custom modules and integrations available—our team provides a quote within one business day.</p>
+        <p class="pricing-note" data-aos="fade-up">Prices reflect typical deployment tiers. Custom modules and integrations available; our team provides a quote within one business day.</p>
       </div>
     </section>
 
@@ -466,28 +473,28 @@
           <article class="blog-card glass-card" data-aos="fade-up">
             <div class="blog-card__thumb"><img src="images/Bed-management.webp" alt="Bed management article" width="600" height="375" loading="lazy" decoding="async"></div>
             <div class="blog-card__body">
-              <p class="blog-card__meta">Remote care · Jan 18, 2026</p>
+              <p class="blog-card__meta">Remote care - Jan 18, 2026</p>
               <h3><a href="404.html">How bed management reduces ER wait times for hospitals</a></h3>
-              <p>Real-time bed tracking and ward dashboards give administrators early visibility—before bottlenecks escalate.</p>
-              <a class="blog-card__cta" href="404.html">Read more →</a>
+              <p>Real-time bed tracking and ward dashboards give administrators early visibility before bottlenecks escalate.</p>
+              <a class="blog-card__cta" href="404.html">Read more -&gt;</a>
             </div>
           </article>
           <article class="blog-card glass-card" data-aos="fade-up" data-aos-delay="50">
             <div class="blog-card__thumb"><img src="images/video-telehealth.webp" alt="Admissions article" width="600" height="375" loading="lazy" decoding="async"></div>
             <div class="blog-card__body">
-              <p class="blog-card__meta">Admissions · Dec 30, 2025</p>
+              <p class="blog-card__meta">Admissions - Dec 30, 2025</p>
               <h3><a href="404.html">Designing admission workflows hospitals actually want to use</a></h3>
-              <p>Faster intake, clear digital forms, and automated MRN assignment—the UX patterns that improve throughput.</p>
-              <a class="blog-card__cta" href="404.html">Read more →</a>
+              <p>Faster intake, clear digital forms, and automated MRN assignment - the UX patterns that improve throughput.</p>
+              <a class="blog-card__cta" href="404.html">Read more -&gt;</a>
             </div>
           </article>
           <article class="blog-card glass-card" data-aos="fade-up" data-aos-delay="100">
             <div class="blog-card__thumb"><img src="images/wellness-program.webp" alt="Pharmacy article" width="600" height="375" loading="lazy" decoding="async"></div>
             <div class="blog-card__body">
-              <p class="blog-card__meta">Pharmacy · Dec 12, 2025</p>
+              <p class="blog-card__meta">Pharmacy - Dec 12, 2025</p>
               <h3><a href="404.html">Billing automation that works: a hospital administrator's playbook</a></h3>
-              <p>From invoice generation to insurance claims—how automated billing sustains revenue accuracy over months.</p>
-              <a class="blog-card__cta" href="404.html">Read more →</a>
+              <p>From invoice generation to insurance claims - how automated billing sustains revenue accuracy over months.</p>
+              <a class="blog-card__cta" href="404.html">Read more -&gt;</a>
             </div>
           </article>
         </div>
@@ -501,7 +508,7 @@
       <div class="container">
         <div class="cta-band" data-aos="fade-up">
           <h2>Ready to modernize your hospital operations?</h2>
-          <p>Request a demo with our hospital solutions team—we'll map your departments to the Hospital Management platform within one business day.</p>
+          <p>Request a demo with our hospital solutions team; we'll map your departments to the Hospital Management platform within one business day.</p>
           <div class="cta-band__actions">
             <a class="btn btn--primary btn--lg" href="404.html">Request a demo</a>
             <a class="btn btn--outline-light btn--lg btn--no-hover-color" href="404.html">Explore modules</a>
@@ -514,7 +521,7 @@
       <div class="container">
         <div class="cta-band cta-band--newsletter glass-card" data-aos="fade-up">
           <h2>Join the Stackly Hospital Management brief</h2>
-          <p>Hospital management insights, platform updates, and operations workflows—monthly, no spam.</p>
+          <p>Hospital management insights, platform updates, and operations workflows, monthly, no spam.</p>
           <form id="newsletter-form" class="cta-band__form form" data-validate action="#" method="post" novalidate>
             <div class="form-field cta-band__field">
               <label for="newsletter-email" class="visually-hidden">Email address</label>
@@ -525,7 +532,7 @@
               <span class="field-error">Enter a valid email address.</span>
             </div>
           </form>
-          <p class="cta-band__success is-hidden" id="newsletter-success" role="status">Thank you—you're on the list. Redirecting…</p>
+          <p class="cta-band__success is-hidden" id="newsletter-success" role="status">Thank you, you're on the list. Redirecting...</p>
         </div>
       </div>
     </section>
@@ -537,7 +544,7 @@
         <a class="logo logo--pro" href="index.html" aria-label="Stackly Hospital Management home">
           <img class="logo__img" src="images/stackly-healthcare.webp" alt="Stackly Hospital Management" width="200" height="44" decoding="async">
         </a>
-        <p>Stackly Hospital Management — integrated hospital management platform for admissions, billing, records, and operations from Bangalore, India.</p>
+        <p>Stackly Hospital Management - integrated hospital management platform for admissions, billing, records, and operations from Bangalore, India.</p>
         <div class="footer-social">
           <a href="404.html" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 110 2.881 1.44 1.44 0 010-2.881z"/></svg></a>
           <a href="404.html" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
@@ -582,7 +589,7 @@
           </p>
           <p class="footer-contact__row">
             <span class="footer-contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-            <span>Mon–Fri 7am–8pm · Sat 9am–2pm MST</span>
+            <span>Mon-Fri 7am-8pm | Sat 9am-2pm MST</span>
           </p>
         </address>
       </div>

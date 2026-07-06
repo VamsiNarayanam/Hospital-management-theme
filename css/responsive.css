@@ -872,7 +872,7 @@
   }
 
   body.premium-theme .hero-premium__stats-card {
-    background: rgba(15, 29, 50, 0.85);
+    background: rgba(24, 23, 31, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
@@ -884,17 +884,17 @@
 
   body.premium-theme.page-home .site-header:not(.is-scrolled),
   body.premium-theme.page-inner.page-hero-overlay .site-header:not(.is-scrolled) {
-    background: rgba(10, 22, 40, 0.35);
+    background: rgba(15, 14, 19, 0.35);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
   }
 
   body.premium-theme .site-header__nav-inner {
-    background: rgba(15, 29, 50, 0.98);
-    border-color: rgba(61, 189, 168, 0.15);
+    background: rgba(24, 23, 31, 0.98);
+    border-color: rgba(212, 134, 78, 0.15);
     box-shadow:
       0 24px 64px rgba(0, 0, 0, 0.6),
-      0 0 32px rgba(61, 189, 168, 0.08);
+      0 0 32px rgba(212, 134, 78, 0.08);
   }
 
   body.premium-theme .site-header__nav-wrap .nav-list,
@@ -1017,11 +1017,11 @@
   }
 
   body.premium-theme .menu-filter__tab.is-active {
-    box-shadow: 0 2px 12px rgba(61, 189, 168, 0.3);
+    box-shadow: 0 2px 12px rgba(212, 134, 78, 0.3);
   }
 
   body.premium-theme .menu-tab.is-active {
-    box-shadow: 0 2px 12px rgba(61, 189, 168, 0.3);
+    box-shadow: 0 2px 12px rgba(212, 134, 78, 0.3);
   }
 
   body.premium-theme .menu-tabs {
@@ -1100,21 +1100,21 @@
 
 @media (max-width: 1024px) {
   body.premium-theme.dashboard-page .dashboard-sidebar-pro {
-    background: rgba(15, 29, 50, 0.98);
-    border-right-color: rgba(61, 189, 168, 0.15);
+    background: rgba(24, 23, 31, 0.98);
+    border-right-color: rgba(212, 134, 78, 0.15);
     box-shadow:
       4px 0 32px rgba(0, 0, 0, 0.5),
-      0 0 24px rgba(61, 189, 168, 0.06);
+      0 0 24px rgba(212, 134, 78, 0.06);
   }
 
   body.premium-theme.dashboard-page .dashboard-backdrop.is-open {
-    background: rgba(10, 22, 40, 0.8);
+    background: rgba(15, 14, 19, 0.8);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
   }
 
   body.premium-theme.dashboard-page .dash-sidebar-toggle {
-    border-color: rgba(61, 189, 168, 0.2);
+    border-color: rgba(212, 134, 78, 0.2);
   }
 
   body.premium-theme.dashboard-page .dash-sidebar-toggle:hover {
@@ -1125,8 +1125,8 @@
 
 @media (max-width: 768px) {
   body.premium-theme.page-auth .site-header {
-    background: rgba(10, 22, 40, 0.92);
-    border-bottom-color: rgba(61, 189, 168, 0.12);
+    background: rgba(15, 14, 19, 0.92);
+    border-bottom-color: rgba(212, 134, 78, 0.12);
   }
 
   body.premium-theme .auth-layout__panel {
