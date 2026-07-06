@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0B1A2B">
+  <title>Admin Dashboard — Stackly Hospital Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/healthcare.css">
+</head>
+<body class="dashboard-page dashboard-page--admin premium-theme">
+
+  <div class="dashboard-backdrop" data-dash-backdrop aria-hidden="true"></div>
+
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar-pro" data-dash-sidebar id="dash-sidebar" aria-label="Admin sidebar">
+      <div class="dashboard-sidebar-pro__logo">
+        <a href="index.html"><img class="dashboard-sidebar-pro__logo-img" src="images/stackly-healthcare.webp" alt="Stackly Hospital Management" width="180" height="40"></a>
+      </div>
+      <div class="dashboard-sidebar-pro__profile">
+        <div class="dashboard-sidebar-pro__avatar" data-dash-avatar>HM</div>
+        <div>
+          <strong class="dashboard-sidebar-pro__profile-name" data-dash-user-name>Admin</strong>
+          <span class="dashboard-sidebar-pro__profile-email" data-dash-user-email>ops@hospitalmgmt.com</span>
+        </div>
+      </div>
+      <p class="dashboard-sidebar-pro__console-label" data-dash-org-label>Hospital admin console</p>
+      <ul class="dashboard-nav-pro">
+        <li><a href="#dash-overview" class="dashboard-sidebar-pro__link is-active" data-dash-nav>Overview</a></li>
+        <li><a href="#dash-appointments" class="dashboard-sidebar-pro__link" data-dash-nav>Admissions</a></li>
+        <li><a href="#dash-patients" class="dashboard-sidebar-pro__link" data-dash-nav>Patients</a></li>
+        <li><a href="#dash-analytics" class="dashboard-sidebar-pro__link" data-dash-nav>Analytics</a></li>
+        <li><a href="#dash-billing" class="dashboard-sidebar-pro__link" data-dash-nav>Billing</a></li>
+        <li><a href="login.html" data-dash-signout>Logout</a></li>
+      </ul>
+    </aside>
+
+    <div class="dashboard-main-pro" data-dash-main>
+      <button type="button" class="dash-sidebar-toggle" data-dash-sidebar-toggle aria-expanded="false" aria-controls="dash-sidebar">☰ Menu</button>
+
+      <section id="dash-overview" class="dash-section" data-dash-section aria-labelledby="dash-overview-title">
+        <div class="dashboard-top">
+          <div>
+            <h1 id="dash-overview-title">Hospital operations dashboard</h1>
+            <p class="dashboard-top__sub" data-dash-greeting>Welcome back. Today's hospital operations at a glance — Bangalore.</p>
+          </div>
+        </div>
+
+        <div class="admin-stat-grid">
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Today's admissions</span>
+            <span class="dash-stat-card__value">47</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Revenue (MTD)</span>
+            <span class="dash-stat-card__value">₹18.6L</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Bed occupancy</span>
+            <span class="dash-stat-card__value">84%</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">New admissions</span>
+            <span class="dash-stat-card__value">12</span>
+          </div>
+        </div>
+
+        <div class="dashboard-panel dash-chart-panel">
+          <div class="dashboard-panel__head">Weekly hospital revenue</div>
+          <div class="dashboard-panel__body dash-chart-panel__body">
+            <canvas id="admin-chart-revenue" aria-label="Weekly hospital revenue chart"></canvas>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Today's flow</strong>
+            <p>32 OPD · 11 IPD · 4 emergency admissions across Bangalore campus</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Staff on duty</strong>
+            <p>18 doctors · 42 nurses · 6 admins · 8 specialists on roster</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>System health</strong>
+            <p>All modules online · EHR sync 99.9% · avg. admission time 8 min</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-appointments" class="dash-section" data-dash-section aria-labelledby="dash-appointments-title">
+        <header class="dash-section__head">
+          <h2 id="dash-appointments-title">Admissions</h2>
+          <p>Manage today's OPD intake, IPD admissions, and emergency registrations across the hospital network.</p>
+        </header>
+
+        <div class="dash-stat-grid dash-stat-grid--compact">
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">In progress</span>
+            <span class="dash-stat-card__value">8</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Scheduled</span>
+            <span class="dash-stat-card__value">39</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Awaiting bed</span>
+            <span class="dash-stat-card__value">5</span>
+          </div>
+        </div>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Today's admissions</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Adm ID</th><th>Patient</th><th>Doctor</th><th>Type</th><th>Ward</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td>HM-4821</td><td>Maria Santos</td><td>Dr. Elena Ruiz</td><td>OPD</td><td>General · B-204</td><td><span class="status-badge status-badge--confirmed">Admitted</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>HM-4820</td><td>James Hartley</td><td>Dr. Michael Chen</td><td>IPD</td><td>Surgical · A-112</td><td><span class="status-badge status-badge--pending">Bed assigned</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>HM-4819</td><td>Lisa Nguyen</td><td>Dr. Priya Sharma</td><td>Follow-up</td><td>OPD Block</td><td><span class="status-badge status-badge--confirmed">Discharged</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>HM-4818</td><td>Carlos Mendez</td><td>Dr. Aisha Patel</td><td>Emergency</td><td>ER · E-03</td><td><span class="status-badge status-badge--confirmed">Under care</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>HM-4817</td><td>Rachel Kim</td><td>Dr. Elena Ruiz</td><td>OPD</td><td>Maternity · C-08</td><td><span class="status-badge status-badge--pending">Intake</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>HM-4816</td><td>Tom Bradley</td><td>Dr. Priya Sharma</td><td>Lab review</td><td>Diagnostics</td><td><span class="status-badge status-badge--confirmed">Confirmed</span></td><td><a href="#">View</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-patients" class="dash-section" data-dash-section aria-labelledby="dash-patients-title">
+        <header class="dash-section__head">
+          <h2 id="dash-patients-title">Patients</h2>
+          <p>Active patient roster, ward assignments, and admission records across the Bangalore hospital network.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Active patients</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Name</th><th>MRN</th><th>Attending doctor</th><th>Ward</th><th>Admitted</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Maria Santos</td><td>MRN-10482</td><td>Dr. Elena Ruiz</td><td>General · B-204</td><td>Jun 28</td><td><span class="status-badge status-badge--confirmed">Admitted</span></td></tr>
+                <tr><td>James Hartley</td><td>MRN-10391</td><td>Dr. Michael Chen</td><td>Surgical · A-112</td><td>Jun 27</td><td><span class="status-badge status-badge--confirmed">Admitted</span></td></tr>
+                <tr><td>Lisa Nguyen</td><td>MRN-10274</td><td>Dr. Priya Sharma</td><td>OPD follow-up</td><td>Jun 26</td><td><span class="status-badge status-badge--confirmed">Discharged</span></td></tr>
+                <tr><td>Carlos Mendez</td><td>MRN-10158</td><td>Dr. Aisha Patel</td><td>ICU · I-05</td><td>Jun 25</td><td><span class="status-badge status-badge--pending">Critical</span></td></tr>
+                <tr><td>Rachel Kim</td><td>MRN-10042</td><td>Dr. Elena Ruiz</td><td>Maternity · C-08</td><td>Jun 24</td><td><span class="status-badge status-badge--confirmed">Admitted</span></td></tr>
+                <tr><td>Tom Bradley</td><td>MRN-09987</td><td>Dr. Priya Sharma</td><td>Cardiology · D-16</td><td>Jun 22</td><td><span class="status-badge status-badge--confirmed">Admitted</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Admissions this month</strong>
+            <p>248 new patients admitted · 94% completed digital intake</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Discharges completed</strong>
+            <p>187 discharges processed · 31 pending billing clearance</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Bed utilization</strong>
+            <p>214 of 255 beds occupied · ICU at 92% capacity</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-analytics" class="dash-section" data-dash-section aria-labelledby="dash-analytics-title">
+        <header class="dash-section__head">
+          <h2 id="dash-analytics-title">Analytics</h2>
+          <p>Hospital operations metrics, admission trends, and departmental outcomes for the Stackly network.</p>
+        </header>
+
+        <div class="dash-stat-grid dash-stat-grid--compact">
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Digital adoption</span>
+            <span class="dash-stat-card__value">92%</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Avg. admission time</span>
+            <span class="dash-stat-card__value">8 min</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">ER wait time</span>
+            <span class="dash-stat-card__value">22 min</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Billing completion</span>
+            <span class="dash-stat-card__value">91%</span>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Top departments</strong>
+            <p>OPD 38% · IPD 24% · Emergency 18% · Surgery 12%</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Bangalore campus growth</strong>
+            <p>Admission volume up 14% QoQ · General and ICU wards highest demand</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Outcome highlights</strong>
+            <p>Bed turnover improved 18% · avg. length of stay reduced to 3.2 days</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-billing" class="dash-section" data-dash-section aria-labelledby="dash-billing-title">
+        <header class="dash-section__head">
+          <h2 id="dash-billing-title">Billing</h2>
+          <p>Claims, invoices, and insurance processing for completed admissions and hospital services.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Recent invoices</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Invoice</th><th>Patient</th><th>Service</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>#INV-2841</td><td>Maria Santos</td><td>OPD consultation</td><td>₹1,850</td><td>Jun 28</td><td><span class="status-badge status-badge--pending">Pending</span></td></tr>
+                <tr><td>#INV-2840</td><td>James Hartley</td><td>IPD admission</td><td>₹32,400</td><td>Jun 27</td><td><span class="status-badge status-badge--confirmed">Paid</span></td></tr>
+                <tr><td>#INV-2839</td><td>Lisa Nguyen</td><td>Lab panel</td><td>₹2,800</td><td>Jun 26</td><td><span class="status-badge status-badge--confirmed">Paid</span></td></tr>
+                <tr><td>#INV-2838</td><td>Carlos Mendez</td><td>Ward charges</td><td>₹18,500</td><td>Jun 25</td><td><span class="status-badge status-badge--confirmed">Paid</span></td></tr>
+                <tr><td>#INV-2837</td><td>Rachel Kim</td><td>Emergency visit</td><td>₹4,200</td><td>Jun 24</td><td><span class="status-badge status-badge--pending">Processing</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Collection rate</strong>
+            <p>94% of invoices paid within 30 days · avg. reimbursement 12 days</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Insurance mix</strong>
+            <p>Commercial 48% · Govt. schemes 32% · Corporate 14% · Self-pay 6%</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Outstanding AR</strong>
+            <p>₹8.4L pending · 18 claims in review with insurers</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
