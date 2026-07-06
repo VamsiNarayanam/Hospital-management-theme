@@ -1056,7 +1056,47 @@ input[type="password"]::-internal-reveal-password-button,
 .nav-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.15rem;
+}
+
+@media (min-width: 769px) {
+  .site-header--pro > .container.site-header__inner {
+    position: relative;
+  }
+
+  .site-header--pro .site-header__nav-wrap {
+    justify-self: stretch;
+  }
+
+  .site-header--pro .site-header__nav-inner {
+    justify-content: flex-end;
+  }
+
+  .site-header--pro .site-header__nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex: none;
+    width: max-content;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .site-header--pro .nav-list {
+    pointer-events: auto;
+  }
+
+  .site-header--pro .logo,
+  .site-header--pro .site-header__actions {
+    position: relative;
+    z-index: 2;
+  }
+
+  .site-header--pro .site-header__actions {
+    margin-left: 0;
+  }
 }
 
 .nav-link {

@@ -489,7 +489,7 @@
   }
 
   .site-header--pro .site-header__nav-wrap {
-    justify-self: end;
+    justify-self: stretch;
   }
 
   .nav-list {
