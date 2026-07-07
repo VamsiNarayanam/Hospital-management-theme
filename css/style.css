@@ -1047,8 +1047,8 @@ input[type="password"]::-internal-reveal-password-button,
 }
 
 .logo--pro .logo__img {
-  height: 48px;
-  max-width: 220px;
+  height: 56px;
+  max-width: 248px;
   width: auto;
   object-fit: contain;
 }
@@ -2342,8 +2342,8 @@ span.testimonial-avatar {
 }
 
 .footer-premium .footer-brand .logo__img {
-  height: 42px;
-  max-width: 200px;
+  height: 50px;
+  max-width: 226px;
   width: auto;
 }
 
@@ -3876,9 +3876,9 @@ span.testimonial-avatar {
 .register-form__logo-img {
   display: block;
   margin: 0 auto;
-  height: 48px;
+  height: 56px;
   width: auto;
-  max-width: 220px;
+  max-width: 248px;
   object-fit: contain;
 }
 

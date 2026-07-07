@@ -3358,3 +3358,138 @@ body.premium-theme.page-error.theme-light .error-page__links a:hover {
   color: #5b4fcf !important;
   -webkit-text-fill-color: #5b4fcf !important;
 }
+
+/* Auth pages ? full-width hero, centered copy & pills */
+body.premium-theme.page-auth.theme-light .site-main {
+  display: block !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  min-height: auto !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero--hud,
+body.premium-theme.page-auth.theme-light .page-hero--image.page-hero--center {
+  width: 100% !important;
+  max-width: none !important;
+  min-height: min(52vh, 520px) !important;
+  min-height: min(52dvh, 520px) !important;
+  flex: none !important;
+  padding: 3rem 0 2.75rem !important;
+  border-radius: 0 !important;
+  border-bottom: none !important;
+  background: #12182a !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero--hud .page-hero__bg {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero--hud .page-hero__inner,
+body.premium-theme.page-auth.theme-light .page-hero--image.page-hero--center .page-hero__inner {
+  width: 100% !important;
+  max-width: 44rem !important;
+  margin-inline: auto !important;
+  padding: 0 clamp(1.25rem, 4vw, 2rem) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero--center .section__kicker,
+body.premium-theme.page-auth.theme-light .page-hero--hud .section__kicker {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 0.75rem !important;
+  text-align: center !important;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero--center .section__kicker::before,
+body.premium-theme.page-auth.theme-light .page-hero--hud .section__kicker::before {
+  content: none !important;
+  display: none !important;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero--hud h1,
+body.premium-theme.page-auth.theme-light .page-hero--center h1,
+body.premium-theme.page-auth.theme-light .page-hero--image.page-hero--center h1 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto 0.75rem !important;
+  text-align: center !important;
+  line-height: 1.1 !important;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero--center .section__lead,
+body.premium-theme.page-auth.theme-light .page-hero--image.page-hero--center .section__lead {
+  width: 100% !important;
+  max-width: 40ch !important;
+  margin-inline: auto !important;
+  text-align: center !important;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero-stats--center,
+body.premium-theme.page-auth.theme-light .page-hero--hud .page-hero-stats {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  width: 100% !important;
+  max-width: 34rem !important;
+  margin: 1.5rem auto 0 !important;
+  padding: 0 !important;
+}
+
+body.premium-theme.page-auth.theme-light .page-hero--hud .page-hero-stats span,
+body.premium-theme.page-auth.theme-light .page-hero-stats--center span {
+  flex: 0 1 auto !important;
+  margin: 0 !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+  text-align: center !important;
+}
+
+body.premium-theme.page-auth.theme-light .auth-section {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 2rem clamp(1rem, 4vw, 1.5rem) 3rem !important;
+  margin: 0 !important;
+  background: var(--color-base) !important;
+}
+
+body.premium-theme.page-auth.theme-light .login-form__container {
+  width: 100% !important;
+  max-width: 520px !important;
+  margin-inline: auto !important;
+}
+
+@media (max-width: 768px) {
+  body.premium-theme.page-auth.theme-light .page-hero--hud,
+  body.premium-theme.page-auth.theme-light .page-hero--image.page-hero--center {
+    min-height: min(48vh, 460px) !important;
+    min-height: min(48dvh, 460px) !important;
+    padding: 2.25rem 0 2rem !important;
+  }
+
+  body.premium-theme.page-auth.theme-light .page-hero-stats--center {
+    max-width: 100% !important;
+  }
+
+  body.premium-theme.page-auth.theme-light .page-hero--hud .page-hero-stats span,
+  body.premium-theme.page-auth.theme-light .page-hero-stats--center span {
+    font-size: 0.62rem !important;
+    padding: 0.4rem 0.7rem !important;
+  }
+}
